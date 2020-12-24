@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-line">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" draggable="false">
+                    <h1>Binary Calculator</h1>
+                </div>
+                <button type="button" id="calc-btn" onclick="calculate()">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class="result-container">
+            <div class="result result-decimal-num">
+                <h2>Decimal Number</h2>
+                <h3 id="decimal-num"></h3>
+                <p>Decimal numbers(Arabic numerals) are the ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9.</p>
+            </div>
+            <div class="border"></div>
+            <div class="result result-binary-num">
+                <h2>Result In Binary Numbers</h2>
+                <h3 id="binary-num"></h3>
+                <p>Binary number is a number expressed in the base-2 numeral system, which uses only symbols 0 and 1.</p>
+            </div>
+        </div>
+        <div class="control-container">
+            <button type="button" class="btn" value="1">1</button>
+            <button type="button" class="btn" value="2">2</button>
+            <button type="button" class="btn" value="3">3</button>
+            <button type="button" class="btn" value="4">4</button>
+            <button type="button" class="btn" value="5">5</button>
+            <button type="button" class="btn" value="6">6</button>
+            <button type="button" class="btn" value="7">7</button>
+            <button type="button" class="btn" value="8">8</button>
+            <button type="button" class="btn" value="9">9</button>
+            <button type="button" class="btn" value="0">0</button>
+            <button type="button" class="btn-del" onclick="backspaceNum()"><</button>
+            <button type="button" class="btn-del" onclick="deleteNum()">c</button>
+        </div>
+        <p class="footer">
+            2020&copy;. Created by <a href="https://www.facebook.com/martik.avagyan.1" target="_blank">Martik Avagyan</a>.
+        </p>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
